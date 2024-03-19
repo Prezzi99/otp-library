@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+#header, #footer {
+    background-color: cornsilk;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+#footer {
+    font-size: small;
+}
+
+#body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    text-align: center;
+}
+
+.title {
+    width: 300px;
+}
+
+.pages, .read, .action {
+    width: 200px;
+}
+
+.action {
+    color: red;
+    font-weight: bold;
+}
+
+.remove:hover {
+    cursor: pointer;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+dialog {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+button, input[type='submit'] {
+    background-color: cornsilk;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#remove {
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+}

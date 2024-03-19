@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        LIBRARY
+    </div>
+    <!-- Body -->
+    <div id="body">
+        <div>
+            <button class="modal new-book">Add Book</button>
+            <dialog class="hidden">
+                <form>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title">
+                    </div>
+                    
+                    <div>
+                        <label for="author">Author</label>
+                        <input type="text" id="author">
+                    </div>
+        
+                    <div>
+                        <label for="pages">Pages</label>
+                        <input type="number" id="pages">
+                    </div>
+        
+                    <div>
+                        <label for="read">Read</label>
+                        <select id="read">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="modal">Close</button>
+                    <input type="submit" value="Add Book">              
+                </form>
+            </dialog>
+        </div>
+        <div id="table-container">
+            <table>
+                    <tr>
+                        <th class="title">Title</th>
+                        <th class="pages">Pages</th>
+                        <th class="read">Read</th>
+                        <th calss="action">Action</th>
+                    </tr>
+                    <!-- <tr>
+                        <td class="title">The Hobbit by J.R.R. Tolkien</td>
+                        <td class="pages">295</td>
+                        <td class="read">Yes</td>
+                        <td class="action">
+                            <button id="remove">Remove</button>
+                            <button id="change">Read</button>
+                        </td>
+                    </tr> -->
+            </table>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        © 2024
+    </div>
+</body>
+</html>
