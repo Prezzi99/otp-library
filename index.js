@@ -50,18 +50,19 @@ submitButton.addEventListener('click', (event) => {
 });
 
 
-// Constructor function for books.
-function Book(title, author, pages, read) {
-    this.title = title,
-    this.author = author,
-    this.pages = pages,
-    this.read = read
-}
+// Class for books.
+class Book {
+    constructor (title, author, pages, read) {
+        this.title = title,
+        this.author = author,
+        this.pages = pages,
+        this.read = read
+    }
 
-// Add function to constructor prototype
-Book.prototype.changeRead = function () {
-    this.read = (this.read == 'No') ? 'Yes' : 'No';
-    return this.read;
+    changeRead() {
+        this.read = (this.read == 'No') ? 'Yes' : 'No';
+        return this.read;
+    }
 }
 
 // Function for adding new books to the library
